@@ -122,12 +122,12 @@
      <Compile Include="Assets\Scripts\Control\PatrolPath.cs" />
      <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Core\ActionScheduler.cs" />
+     <Compile Include="Assets\Scripts\Core\CameraController2.cs" />
      <Compile Include="Assets\Scripts\Core\CameraFacing.cs" />
      <Compile Include="Assets\Scripts\Core\DestroyAfterEffect.cs" />
      <Compile Include="Assets\Scripts\Core\IAction.cs" />
      <Compile Include="Assets\Scripts\Core\Mutant.cs" />
      <Compile Include="Assets\Scripts\Core\PersistentObjectSpawner.cs" />
-     <Compile Include="Assets\Scripts\Core\PlayerFollow.cs" />
      <Compile Include="Assets\Scripts\FramesPerSecond.cs" />
      <Compile Include="Assets\Scripts\Movement\Mover.cs" />
      <Compile Include="Assets\Scripts\Resources\Health.cs" />

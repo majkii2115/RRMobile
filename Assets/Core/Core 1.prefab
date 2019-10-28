@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5015309587044249708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601124260833644678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d9c539b60af58a44bd43b007f4a4db1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 390921174785023368}
+  smoothFactor: 0.5
+  lookAtPlayer: 0
+  shouldRotate: 1
 --- !u!1 &1601124261617448580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,16 +1051,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1497993901933581404, guid: 511bc44f3f4824943a40d9d9465726d8,
-        type: 3}
-      propertyPath: m_Mass
-      value: 0.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 1497993901933581404, guid: 511bc44f3f4824943a40d9d9465726d8,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1392881898217192233, guid: 511bc44f3f4824943a40d9d9465726d8,
         type: 3}
       propertyPath: maxSpeed
@@ -1788,6 +1794,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5222fc19c8f6bc04999b53c7817bd60f, type: 3}
+--- !u!1 &1601124260833644678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8814318759077563785, guid: 5222fc19c8f6bc04999b53c7817bd60f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7812221697529912591}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1601124260833644673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8814318759077563790, guid: 5222fc19c8f6bc04999b53c7817bd60f,
