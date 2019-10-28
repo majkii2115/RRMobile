@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085f7335b1d929f4eb8d2b7f509484dc, type: 3}
+  m_Name: Human_Knight Bow
+  m_EditorClassIdentifier: 
+  animatorOverride: {fileID: 22100000, guid: 140a45b66e28f8242b271d4dd6185dc7, type: 2}
+  weapon: {fileID: 1773659823482927293, guid: b7d3184756d2bfb4c80b279ad6f35915, type: 3}
+  range: 15
+  weaponDamage: 15
+  percentageBonus: 10
+  isRightHanded: 0
+  projectile: {fileID: 3010283311047453508, guid: 7ca83994d668f40449f59bcbe21df0bc,
+    type: 3}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Rouge Sword
+  m_Controller: {fileID: 9100000, guid: 0afea2c1401bd3140af1770b6542fdd2, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 1750dc7c9dc11f84bbc3045d3c8d531d,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: f784b004e9b8d4a43810a3dfddb44f02,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: d74f21e1fb0fc4f4d8c54abf9844c689,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: b8287b119bc2888419231a759f510164,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 03e32d5ac46b3d549963c2dd31db06d2,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 2c17ca9b89dc560459949634f944625b,
+      type: 3}

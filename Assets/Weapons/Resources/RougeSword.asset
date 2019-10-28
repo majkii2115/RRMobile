@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085f7335b1d929f4eb8d2b7f509484dc, type: 3}
+  m_Name: RougeSword
+  m_EditorClassIdentifier: 
+  animatorOverride: {fileID: 22100000, guid: 9e91a30669930db41bf2589c36ba97b2, type: 2}
+  weapon: {fileID: 4065966038478488692, guid: 010b16dac5a05ac4c9c36015aa93f207, type: 3}
+  range: 2
+  weaponDamage: 5
+  percentageBonus: 7
+  isRightHanded: 1
+  projectile: {fileID: 0}

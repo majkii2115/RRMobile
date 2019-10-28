@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085f7335b1d929f4eb8d2b7f509484dc, type: 3}
+  m_Name: Rouge Bow
+  m_EditorClassIdentifier: 
+  animatorOverride: {fileID: 22100000, guid: 12f97370df6261746871c4f99e093755, type: 2}
+  weapon: {fileID: 5541183019367777770, guid: 1267419d8daa9564db2fe161819bcd86, type: 3}
+  range: 10
+  weaponDamage: 3
+  percentageBonus: 5
+  isRightHanded: 0
+  projectile: {fileID: 2741977348765613811, guid: 42cccd064549e2b4d90faa5be5c734c4,
+    type: 3}
