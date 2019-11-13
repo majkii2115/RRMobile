@@ -112,7 +112,7 @@ namespace RPG.Combat
         }
 
         //marker on animation tab, just working without calling before
-        void Hit()
+        public void Hit()
         {
             if (target == null) return;
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);

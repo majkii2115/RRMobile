@@ -8,6 +8,7 @@ TagManager:
   - Weapon
   - Sword
   - Fireball
+  - Enemy
   layers:
   - Default
   - TransparentFX
