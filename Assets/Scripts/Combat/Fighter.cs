@@ -114,18 +114,22 @@ namespace RPG.Combat
         //marker on animation tab, just working without calling before
         public void Hit()
         {
+            Debug.Log("FIGHTER.HIT GENERAL");
             if (target == null) return;
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
             if(currentWeapon.value != null)
             {
+                Debug.Log("FIGHTER.HIT VALUE NIE JEST NULL");
                 currentWeapon.value.OnHit();
             }
             if(currentWeaponConfig.HasProjectile())
             {
+                Debug.Log("SPAWN PROJECTILE");
                 currentWeaponConfig.SpawnProjectile(gameObject, rightHand,leftHand, target, damage);
             }
             else
             {
+                Debug.Log("FIGHTER.HIT PRZED TAKE DAMAGE");
                 target.TakeDamage(gameObject, damage);  
             }
         }

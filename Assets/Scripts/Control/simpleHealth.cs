@@ -9,6 +9,7 @@ namespace RPG.Control
 
         public void Damage()
         {
+            Debug.Log("dziala DMG");
             healthPoints -= 10;
         }
         private void Update() 

@@ -9,7 +9,7 @@ namespace RPG.Control
 {
     public class PlayerController : MonoBehaviour
     {
-        public GameObject activator;
+        public GameObject enemy = null;
         PlayerControls controls;
         public float moveSpeed = 5f;
         public bool isAlive = true;
@@ -18,27 +18,32 @@ namespace RPG.Control
             controls = new PlayerControls();
             controls.Gameplay.Attack.performed += ctx => Attack();
         }
-        private void OnTriggerEnter(Collider other) 
+        public void Hit()
         {
-            if(other.gameObject.CompareTag("Enemy") && Input.GetButtonDown("attackButton"))
+            if(!enemy.GetComponent<Health>().IsDead())
+            enemy.GetComponent<Health>().TakeDamage(gameObject, 20);
+        }
+        private void OnTriggerStay(Collider other) 
+        {
+            Debug.Log("DZIALA SAM TRIGGER");
+            if(other.gameObject.CompareTag("Enemy") && Input.GetButtonDown("attackButton") && !other.gameObject.GetComponent<Health>().IsDead())
             {
-                other.GetComponent<simpleHealth>().Damage();
+                enemy = other.gameObject;
+                Debug.Log("DZIALA MIX");
             } 
-            else
+            else if(Input.GetButtonDown("attackButton"))
             {
+                enemy = null;
                 Attack();  
-            }      
+            }  
         }
         public void Attack()
         {
             GetComponent<Animator>().SetTrigger("attack");
         }
+        
         void Update()
         {
-            // if(Input.GetButtonDown("attackButton"))
-            // {
-            //     Attack();
-            // }
             float sum = VecSum();
             GetComponent<Animator>().SetFloat("speed", sum);
             if(sum > 0.1f && isAlive)
@@ -66,5 +71,6 @@ namespace RPG.Control
         {
             controls.Gameplay.Disable();    
         }
+
     }
 }
