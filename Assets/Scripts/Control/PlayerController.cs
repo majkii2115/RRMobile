@@ -35,7 +35,15 @@ namespace RPG.Control
             {
                 enemy = null;
                 Attack();  
-            }  
+            } 
+            else if(other.gameObject.CompareTag("Enemy"))
+            {
+                enemy = other.gameObject;
+            }
+        }
+        private void OnTriggerExit(Collider other) 
+        {
+            enemy = null;
         }
         public void Attack()
         {

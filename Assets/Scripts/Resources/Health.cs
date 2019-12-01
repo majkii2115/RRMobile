@@ -97,6 +97,7 @@ public class Health : MonoBehaviour, ISaveable
         private void Die()
         {
             GetComponent<CapsuleCollider>().enabled = false;
+            GetComponent<Rigidbody>().freezeRotation = true;
             if (isDead) return;
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
