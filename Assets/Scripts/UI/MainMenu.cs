@@ -7,10 +7,12 @@ namespace RPG.UI
 {
     public class MainMenu : MonoBehaviour
     {
+        public GameObject back;
         public GameObject loadingScreen;
         public Slider slider;
         public void PlayGame()
         {
+            back.SetActive(false);
             StartCoroutine(LoadAsynchronously());
         }
         public void QuitGame()

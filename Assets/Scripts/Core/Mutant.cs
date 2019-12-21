@@ -5,6 +5,7 @@ namespace RPG.Core
 {   
     public class Mutant : MonoBehaviour 
     {
+        [SerializeField] GameObject hud;
         [SerializeField] GameObject final;
         Health health;
         private void Awake() 
@@ -15,6 +16,7 @@ namespace RPG.Core
         {
             if(health.IsDead())
             {
+                hud.SetActive(false);
                 final.SetActive(true);
             }    
         }

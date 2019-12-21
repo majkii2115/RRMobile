@@ -43,7 +43,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 0.66
+  m_Intensity: 2.06
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -161,11 +161,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2592796312809951387}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: ae41d517470aa0646a1e06ce14846c8f,
-        type: 3}
-      propertyPath: m_Name
-      value: SM_Item_Wine_01
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ae41d517470aa0646a1e06ce14846c8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -241,6 +236,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9a793c3fcaf306e4a8c5e575ec93291f, type: 2}
+    - target: {fileID: -927199367670048503, guid: ae41d517470aa0646a1e06ce14846c8f,
+        type: 3}
+      propertyPath: m_Name
+      value: SM_Item_Wine_01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae41d517470aa0646a1e06ce14846c8f, type: 3}
 --- !u!4 &7386398498907697410 stripped

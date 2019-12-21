@@ -12,6 +12,7 @@ namespace RPG.UI
         {
             if(Input.GetKeyDown(KeyCode.Escape))
             {
+                Debug.Log("DZIALA");
                 if(isPaused)
                 {
                     Resume();
@@ -28,22 +29,6 @@ namespace RPG.UI
             Time.timeScale = 0f;
             isPaused = true;
         }
-
-        public void Save()
-        {
-            FindObjectOfType<SavingWrapper>().GetComponent<SavingWrapper>().Save();
-        }
-        public void Load()
-        {
-            FindObjectOfType<SavingWrapper>().GetComponent<SavingWrapper>().Load();
-        }
-        public void Delete()
-        {
-            print("deleted");
-            FindObjectOfType<SavingWrapper>().GetComponent<SavingWrapper>().Delete();
-        }
-
-
         public void Resume()
         {
             pauseMenuUI.SetActive(false);

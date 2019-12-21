@@ -1,6 +1,4 @@
 using UnityEngine;
-using RPG.Combat;
-using UnityEngine.InputSystem;
 using RPG.Resources;
 
 //HORIZONTAL - POZIOME
@@ -9,9 +7,10 @@ namespace RPG.Control
 {
     public class PlayerController : MonoBehaviour
     {
-        public GameObject enemy = null;
+        public GameObject dead;
+        protected GameObject enemy = null;
         PlayerControls controls;
-        public float moveSpeed = 5f;
+        public float moveSpeed = 8f;
         public bool isAlive = true;
         private void Awake() 
         {
@@ -25,11 +24,9 @@ namespace RPG.Control
         }
         private void OnTriggerStay(Collider other) 
         {
-            Debug.Log("DZIALA SAM TRIGGER");
             if(other.gameObject.CompareTag("Enemy") && Input.GetButtonDown("attackButton") && !other.gameObject.GetComponent<Health>().IsDead())
             {
                 enemy = other.gameObject;
-                Debug.Log("DZIALA MIX");
             } 
             else if(Input.GetButtonDown("attackButton"))
             {
@@ -60,10 +57,15 @@ namespace RPG.Control
                     new Vector3(0f, Vector3.SignedAngle(new Vector3(Input.GetAxis("Horizontal") ,0f, Input.GetAxis("Vertical")*(-1)), Vector3.forward, Vector3.up), 0f);
 
                 transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed * sum);
+            } else if (sum > 0.1 && isAlive && Input.GetButton("sprint"))
+            {
+                Debug.Log("DZIALA SPRINT");
+                transform.Translate(Vector3.forward * Time.deltaTime * (moveSpeed + 5) * sum);
             }
             if(GetComponent<Health>().GetHealthPoint() <= 0)
             {
                 isAlive = false;
+                dead.SetActive(true);
             }
         }
         public float VecSum()

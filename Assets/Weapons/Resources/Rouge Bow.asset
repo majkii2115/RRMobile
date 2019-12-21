@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: 12f97370df6261746871c4f99e093755, type: 2}
   weapon: {fileID: 5541183019367777770, guid: 1267419d8daa9564db2fe161819bcd86, type: 3}
-  range: 10
+  range: 20
   weaponDamage: 3
   percentageBonus: 5
   isRightHanded: 0

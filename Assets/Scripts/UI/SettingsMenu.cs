@@ -5,6 +5,8 @@ namespace RPG.UI
 {   
     public class SettingsMenu : MonoBehaviour 
     {
+        public bool iss;
+        public GameObject joy;
         public AudioMixer audioMixer;
         public void SetVolume(float volume)
         {
@@ -15,5 +17,6 @@ namespace RPG.UI
         {
             QualitySettings.SetQualityLevel(qualityIndex);
         }
+        
     }
 }
